@@ -1,0 +1,12 @@
+<!--No archivos de html, vienen de un canva de python y antes se procesa en el servidor-->
+
+{% extends "layout/base.html"%}
+{% load static %}
+{% block content %}
+
+<h1>{{ title }}</h1>
+<img src="{% static 'k.jpeg'%}" alt="imagen bonita" width="120">
+
+<p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Impedit aliquam molestiae repellat officiis quasi aperiam accusantium, debitis corrupti quisquam, enim, delectus qui minima ut dolor non molestias eveniet. Laboriosam recusandae temporibus minus praesentium. Voluptates, consequatur eveniet obcaecati ex ea excepturi!</p>
+
+{% endblock %}
