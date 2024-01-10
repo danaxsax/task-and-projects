@@ -1,5 +1,4 @@
 # define que se envia al cliente (html)
-from django.http import HttpResponse
 from .models import Project, Task
 from django.shortcuts import render, redirect, get_object_or_404
 from .forms import CreateNewTask, CreateNewProject
@@ -10,7 +9,7 @@ def home(request):
    #declaracion de variables
    title = "Django course!!!"
    #              (parametro1, parametro2, diccionario que manda variables)
-   return render (request, "index.html", {
+   return render (request, "index. html", {
       "title" : title 
    })
 
